@@ -56,6 +56,7 @@ export default function Card() {
             <input
               type="search"
               placeholder="Search Location"
+              className="text-center"
               onChange={(event) => {
                 setSearch(event.target.value);
               }}
