@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 export default function Card() {
   const [city, setCity] = useState(null);
   const [country, setCountry] = useState("In");
@@ -77,7 +78,7 @@ export default function Card() {
                 <h4>Temperature</h4>
                 <h2 className="temp">{`${city.temp}°C`}</h2>
                 <hr />
-                <h3>Discription</h3>
+                <h3>Description</h3>
                 <h3>{disc ? disc : "no discription"}</h3>
               </div>
             )}
