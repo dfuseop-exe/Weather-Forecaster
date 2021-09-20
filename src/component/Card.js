@@ -45,7 +45,7 @@ export default function Card() {
         <img src = {title} alt="image" style={{width : "80%" , display : "block" , margin : "auto"}}/>   
 
         <div
-          className="card text-white bg-dark mb-3 shadow-lg p-3 mb-5 bg-dark rounded"
+          className="card text-white bg-dark mb-3 my-3 shadow-lg p-3 mb-5 bg-dark rounded"
           style={{
             width: "70%",
             margin: "auto",
