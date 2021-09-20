@@ -1,6 +1,6 @@
 import './Card.css';
 import React, { useEffect, useState } from "react";
-import imgage from './images/weather-forecast.png'
+import logo from './images/weather-forecast.png'
 import title from './images/heading.png'
 
 
@@ -47,7 +47,7 @@ export default function Card() {
         <div
           className="card text-white bg-dark mb-3 my-3 shadow-lg p-3 mb-5 bg-dark rounded"
           style={{
-            width: "70%",
+            width: "80%",
             margin: "auto",
           }}
         >
@@ -55,9 +55,10 @@ export default function Card() {
             <h3 className="card-title my-3 ">Find Current Weather Conditions</h3>
             
             <input 
+              style={{width : "60%" , margin : "auto"}}
               type="search"
-              placeholder="Search Location"
-              className="p-2 bg-dark text-white border-3 border-danger rounded-3 text-center"
+              placeholder="Search"
+              className="p-2 bg-dark text-white border-3 border-danger rounded-3 "
               onChange={(event) => {
                 setSearch(event.target.value);
               }}
@@ -69,7 +70,7 @@ export default function Card() {
               <div className="container">
                 <div className="info">
                   
-                  <img src = {imgage} alt="image" style={{width : "150px" , height : "150px"}} />
+                  <img src = {logo} alt="image" style={{width : "150px" , height : "150px"}} />
                  
                   <h3>{`${search},${country.country} `}</h3>
                   <h4>{day}</h4>
