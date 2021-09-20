@@ -41,14 +41,7 @@ export default function Card() {
     <div>
         {/* // eslint-disable-next-line */}
       <div className="container my-3" style={{ fontFamily: "Azeret Mono" }}>
-        {/* <h1
-          className="text-center fw-bold"
-           // eslint-disable-next-line
-          style={{ fontFamily: "Azeret Mono", fontFamily: "Bebas Neue" ,  marginBottom : "15px"}}
-        >
-          Weather-Forecaster
-        </h1> */}
-
+        
         <img src = {title} alt="image" style={{width : "80%" , display : "block" , margin : "auto"}}/>   
 
         <div
