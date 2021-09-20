@@ -42,12 +42,12 @@ export default function Card() {
         {/* // eslint-disable-next-line */}
       <div className="container my-3" style={{ fontFamily: "Azeret Mono" }}>
         
-        <img src = {title} alt="image" style={{width : "80%" , display : "block" , margin : "auto"}}/>   
+        <img src = {title} alt="image" style={{width : "100%" , display : "block" , margin : "auto"}}/>   
 
         <div
           className="card text-white bg-dark mb-3 my-3 shadow-lg p-3 mb-5 bg-dark rounded"
           style={{
-            width: "80%",
+            width: "90%",
             margin: "auto",
           }}
         >
