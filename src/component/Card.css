@@ -1,0 +1,8 @@
+.shadow-lg{
+    box-shadow: 0 2rem 6rem rgba(41,0,0,1)!important;
+
+}
+
+input {
+    font-size: 25px;
+  }

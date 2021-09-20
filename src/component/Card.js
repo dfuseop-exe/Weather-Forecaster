@@ -1,4 +1,8 @@
+import './Card.css';
 import React, { useEffect, useState } from "react";
+import imgage from './images/weather-forecast.png'
+import title from './images/heading.png'
+
 
 
 export default function Card() {
@@ -37,27 +41,30 @@ export default function Card() {
     <div>
         {/* // eslint-disable-next-line */}
       <div className="container my-3" style={{ fontFamily: "Azeret Mono" }}>
-        <h1
-          className="text-center"
+        {/* <h1
+          className="text-center fw-bold"
            // eslint-disable-next-line
-          style={{ fontFamily: "Azeret Mono", fontFamily: "Bebas Neue" }}
+          style={{ fontFamily: "Azeret Mono", fontFamily: "Bebas Neue" ,  marginBottom : "15px"}}
         >
           Weather-Forecaster
-        </h1>
+        </h1> */}
+
+        <img src = {title} alt="image" style={{width : "80%" , display : "block" , margin : "auto"}}/>   
+
         <div
-          className="card text-white bg-dark mb-3 "
+          className="card text-white bg-dark mb-3 shadow-lg p-3 mb-5 bg-dark rounded"
           style={{
-            width: "80%",
+            width: "70%",
             margin: "auto",
-            
           }}
         >
           <div className="card-body text-center">
-            <h5 className="card-title my-3 ">Enter City Name Below</h5>
-            <input
+            <h3 className="card-title my-3 ">Find Current Weather Conditions</h3>
+            
+            <input 
               type="search"
               placeholder="Search Location"
-              className="text-center"
+              className="p-2 bg-dark text-white border-3 border-danger rounded-3 text-center"
               onChange={(event) => {
                 setSearch(event.target.value);
               }}
@@ -69,7 +76,7 @@ export default function Card() {
               <div className="container">
                 <div className="info">
                   
-                  <i className="fas fa-street-view"></i>
+                  <img src = {imgage} alt="image" style={{width : "150px" , height : "150px"}} />
                  
                   <h3>{`${search},${country.country} `}</h3>
                   <h4>{day}</h4>

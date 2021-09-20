@@ -3,9 +3,10 @@ import Card from './component/Card';
 import React from 'react'
 
 
+
 function App() {
   return (
-      <Card/>
+   <Card />
   );
 }
 
