@@ -2,6 +2,7 @@ import './Card.css';
 import React, { useEffect, useState } from "react";
 import logo from './images/weather-forecast.png'
 import title from './images/heading.png'
+import back from '../weatherback.jpg'
 
 
 
@@ -38,17 +39,18 @@ export default function Card() {
   }, [search]);
 
   return (
-    <div>
+    <div className="background-div" style={{backgroundImage : `url(${back})` , backgroundSize : "cover" , backgroundRepeat : "no-repeat" , width : "100vw" , height : "100vh" ,}}>
         {/* // eslint-disable-next-line */}
-      <div className="container my-3" style={{ fontFamily: "Azeret Mono" }}>
+      <div className="container my-3" style={{ fontFamily: "Open Sans" }}>
         
         <img src = {title} alt="image" style={{width : "100%" , display : "block" , margin : "auto"}}/>   
 
         <div
-          className="card text-white bg-dark mb-3 my-3 shadow-lg p-3 mb-5 bg-dark rounded"
+          className="card text-dark bg-light mb-3 my-3 shadow-lg p-3 mb-5 bg-light rounded"
           style={{
             width: "90%",
             margin: "auto",
+
           }}
         >
           <div className="card-body text-center">
@@ -58,7 +60,7 @@ export default function Card() {
               style={{width : "60%" , margin : "auto"}}
               type="search"
               placeholder="Search"
-              className="p-2 bg-dark text-white border-3 border-danger rounded-3 "
+              className="p-2 text-dark bg-light border-3 border-danger rounded-3 "
               onChange={(event) => {
                 setSearch(event.target.value);
               }}
